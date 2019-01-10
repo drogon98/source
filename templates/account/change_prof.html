@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+<head>
+  {% block head %}
+  <title>Change profile</title>
+  {% endblock %}
+</head>
+<body>
+  {% block body %}
+  <div class="container">
+    <h1><b>Change profile</b></h1>
+    <p>Hi,{{ user.username }} change your profile below.</p>
+    <form  method="post">
+      {% csrf_token %}
+      {% for field in form %}
+      {{ field.label_tag }}<br/>
+      {{ field }}<br/>
+      {% endfor %}
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+  {% endblock %}
+</body>

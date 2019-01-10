@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+<head>
+  {% block head %}
+  <title>Login</title>
+  {% endblock %}
+</head>
+<body>
+  {% block body %}
+  <div class="container">
+    <h1><b>Login page</b></h1>
+    <p>Dont have an account?Sign up<a href="{% url 'register' %}"> here</a>.</p>
+    <form  method="post">
+      {% csrf_token %}
+      {% for field in form %}
+      {{ field.label_tag }}<br/>
+      {{ field }}<br/>
+      {% endfor %}
+      <button type="submit">Login</button>
+    </form>
+    <p><a href="{% url 'password_reset' %}">Forgotten your password?</a></p> 
+  </div>
+  {% endblock %}
+</body>

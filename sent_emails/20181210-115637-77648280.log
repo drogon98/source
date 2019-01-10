@@ -1,0 +1,25 @@
+Content-Type: text/plain; charset="utf-8"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Subject: Password reset on 127.0.0.1:8000
+From: webmaster@localhost
+To: ndegwaharryxon1998@gmail.com
+Date: Mon, 10 Dec 2018 08:56:37 -0000
+Message-ID: <154443219760.7016.13927112461156872609@Harrison-PC>
+
+
+You're receiving this email because you requested a password reset for your user account at 127.0.0.1:8000.
+
+Please go to the following page and choose a new password:
+
+http://127.0.0.1:8000/account/password-reset-confirm/MQ/520-681136f7f5294333c61f/
+
+Your username, in case you've forgotten: kiminza
+
+Thanks for using our site!
+
+The 127.0.0.1:8000 team
+
+
+
+-------------------------------------------------------------------------------
